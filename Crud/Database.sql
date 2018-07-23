@@ -1,0 +1,11 @@
+CREATE DATABASE `Exemplo`;
+
+CREATE TABLE `TB_USUARIO` IF NOT EXISTS(
+    `id` INT NOT NULL PRIMARY KEY,
+    `nome` VARCHAR(100) NOT NULL,
+    `sexo` VARCHAR(1) NOT NULL,
+    `data_nascimento` DATE NOT NULL
+);
+
+INSERT INTO TB_USUARIO VALUES (1,'Joaquim','M','1950-06-19'), (2,'Maria','F','1998-02-19'), 
+(3,'João','M','1999-10-10');
